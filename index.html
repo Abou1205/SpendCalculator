@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spend Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <h1 class="heading">Spend Calculator</h1>
+
+    <div class="container">
+
+        <h3 class="greet">Welcome, <input type="text" placeholder="Your Name" id="name-input"></h3>
+
+        <form>
+            <div class="double">
+                <div class="form-spend">
+                    <label for="">Spend:</label>
+                    <input type="text" placeholder="Your Product" id="spend-input">
+                </div>
+
+                <div class="form-price">
+                    <label for="">Price:</label>
+                    <input type="number" placeholder="Price" id="price-input">
+                </div>
+            </div>
+
+            <div class="double">
+                <div class="form-state">
+                    <input type="checkbox" id="status-input">
+                    <label for="">Paid</label>
+                </div>
+
+                <button class="add-btn" id="addBtn">Add</button>
+            </div>
+        </form>
+
+        <div class="total">
+            Total Spending: <span id="total-info">0</span> &#8378;
+        </div>
+
+        <select name="" id="filter-check">
+            <option value="all">All</option>
+            <option value="not-paid">Not Paid</option>
+            <option value="paid">Paid</option>
+        </select>
+
+        <div class="list"></div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
